@@ -17,6 +17,8 @@ func main() {
 		log.Fatal(err)
 	}
 
+	fmt.Println("Successfully connected to the database")
+
 	sql := "INSERT INTO students(email, first_name, last_name) VALUES ('admin@gmail.com', 'admin','admin')"
 
 	res, err := db.Exec(sql)
@@ -29,6 +31,7 @@ func main() {
 
 	if err != nil {
 		log.Fatal(err)
+
 	}
 
 	fmt.Printf("The last inserted row id: %d\n", lastId)

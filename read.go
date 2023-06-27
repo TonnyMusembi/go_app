@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-func reafText() {
+func readText() {
 
     content, err := ioutil.ReadFile("sample.txt")
 
